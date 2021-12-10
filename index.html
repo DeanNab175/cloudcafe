@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore-compat.js"></script>
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button type="submit">Add cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        <script>
+            
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDh8BljnrcTmJsgQuv4RPBQZgUgg61ssB4",
+              authDomain: "cloud-cafe-5dca4.firebaseapp.com",
+              projectId: "cloud-cafe-5dca4",
+              storageBucket: "cloud-cafe-5dca4.appspot.com",
+              messagingSenderId: "396762500334",
+              appId: "1:396762500334:web:b33679d6921b87bed3b7ff",
+              measurementId: "G-7D223D37TS"
+            };
+          
+            // Initialize Firebase
+            const firebaseApp = firebase.initializeApp(firebaseConfig);
+            const db = firebaseApp.firestore();
+
+            db.settings({ timestampsInSnapshots: true });
+        </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
