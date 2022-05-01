@@ -1,5 +1,5 @@
 body{
-    background: #eab0dc;
+    background: #855b5b;
     font-family: 'Balsamiq Sans', cursive;
 }
 
@@ -16,7 +16,7 @@ h1{
     max-width: 960px;
     margin: 30px auto;
     padding:  20px 30px;
-    border-radius: 10px 120px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
@@ -29,7 +29,7 @@ li{
     padding: 20px;
     background: #f6f6f6;
     font-size: 20px;
-    color: #555;
+    color: #362323;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
     height: 46px;
@@ -47,7 +47,7 @@ li span{
 li span:nth-child(2){
     font-size: 16px;
     margin-top: 6px;
-    color: #999;
+    color: #6d6666;
 }
 
 li div{
@@ -102,7 +102,7 @@ form:after{
 
 button{
     border: 0;
-    background: #eab0dc;
+    background: #362323;
     border-radius: 10px;
     padding: 13px;
     width: 14%;
